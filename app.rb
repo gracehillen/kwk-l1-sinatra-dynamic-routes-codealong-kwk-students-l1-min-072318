@@ -23,6 +23,9 @@ get '/medicines/:id' do
   end.first
   erb :'/medicines/show.html'
 end
+params = {
+  :id => 1
+}
 
 
 end
