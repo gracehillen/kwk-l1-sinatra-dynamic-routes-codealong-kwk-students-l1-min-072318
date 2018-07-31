@@ -21,9 +21,9 @@ get '/goodbye/:name' do
   @person_name = params[:name]
   "Goodbye #{@person_name}"
 end
-params = {
-  :id => 1
-}
+# params = {
+#   :id => 1
+# }
 get '/mutiply/:number1/:number2'
   @number1 = params[:number1].to_i 
   @number2 = params[:number2].to_i 
