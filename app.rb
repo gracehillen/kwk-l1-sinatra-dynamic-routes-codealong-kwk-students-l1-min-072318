@@ -18,10 +18,8 @@ class App < Sinatra::Base
 
 # medicines_controller.rb
 get '/goodbye/:name' do
-  @medicine = all_the_medicines.select do |medicine|
-    medicine.id == params[:id]
-  end.first
-  erb :'/medicines/show.html'
+  @person_name = params[:name]
+  "Goodbye #{@person_name}"
 end
 params = {
   :id => 1
