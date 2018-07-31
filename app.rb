@@ -20,7 +20,13 @@ all_the_medicines = [
   <Medicine:0x007fb739b1af88 @id=3, @name="benadryl" @group="anti-histamine">
 ]
 
-
+medicines_controller.rb
+get '/medicines/:id' do
+  @medicine = all_the_medicines.select do |medicine|
+    medicine.id == params[:id]
+  end.first
+  erb :'/medicines/show.html'
+end
 
 
 end
