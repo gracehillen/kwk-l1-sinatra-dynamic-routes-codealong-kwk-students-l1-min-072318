@@ -14,20 +14,17 @@ class App < Sinatra::Base
   end
 
   # Code your final two routes here:
-
-
-# medicines_controller.rb
-get '/goodbye/:name' do
-  @person_name = params[:name]
-  "Goodbye #{@person_name}"
-end
+  get '/goodbye/:name' do
+    @person_name = params[:name]
+    "Goodbye #{@person_name}"
+  end
 # params = {
 #   :id => 1
 # }
-get '/mutiply/:number1/:number2'
-  @number1 = params[:number1].to_i 
-  @number2 = params[:number2].to_i 
-  (@number1 * @number2).to_i 
+  get '/mutiply/:number1/:number2' do
+    @number1 = params[:number1].to_i 
+    @number2 = params[:number2].to_i 
+    (@number1 * @number2).to_i 
+  end
 end
-end
-end 
+
