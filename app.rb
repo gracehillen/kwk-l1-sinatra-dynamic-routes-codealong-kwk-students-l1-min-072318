@@ -17,7 +17,7 @@ class App < Sinatra::Base
 
 
 # medicines_controller.rb
-get '/medicines/:id' do
+get '/goodbye/:name' do
   @medicine = all_the_medicines.select do |medicine|
     medicine.id == params[:id]
   end.first
@@ -27,8 +27,8 @@ params = {
   :id => 1
 }
 get '/mutiply/:number1/:number2'
-  number1 = params[:number1].to_i 
-  number2 = params[:number2].to_i 
-  (number1 * number2).to_i 
+  @number1 = params[:number1].to_i 
+  @number2 = params[:number2].to_i 
+  (@number1 * @number2).to_i 
 end
 end
