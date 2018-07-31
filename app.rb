@@ -22,9 +22,9 @@ class App < Sinatra::Base
 #   :id => 1
 # }
   get '/mutiply/:number1/:number2' do
-    @number1 = params[:number1].to_i 
-    @number2 = params[:number2].to_i 
-    (@number1 * @number2).to_s 
+    @num1 = params[:number1].to_i 
+    @num2 = params[:number2].to_i 
+    (@num1 * @num2).to_s 
   end
 end
 
