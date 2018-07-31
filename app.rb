@@ -27,6 +27,6 @@ params = {
   :id => 1
 }
 get '/addnumbers/:number1/:number2'
-
+  number1 = params[:]
 
 end
