@@ -30,3 +30,4 @@ get '/mutiply/:number1/:number2'
   (@number1 * @number2).to_i 
 end
 end
+end 
