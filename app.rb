@@ -26,7 +26,7 @@ end
 params = {
   :id => 1
 }
-get '/addnumbers/:number1/:number2'
+get '/mutiply/:number1/:number2'
   number1 = params[:number1].to_i 
   number2 = params[:number2].to_i 
   (number1 * number2).to_i 
